@@ -39,6 +39,8 @@ Released under the GNU General Public Licence, Version 2:
 
 ## Notes
 
+The main purpose of PyGithubApi is so I can write a function for my other projects to check back with GitHub and see if they are the most current version.
+
 Right now it only has one function: get_last_commit(), which takes a URL from the GitHub API for the commits on a repository and returns the latest commit date.
 
 ### Missing Functionality
