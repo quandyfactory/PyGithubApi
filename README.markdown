@@ -43,9 +43,9 @@ The main purpose of PyGithubApi is so I can write a function for my other projec
 
 Right now it only has one function: get_last_commit(), which takes a URL from the GitHub API for the commits on a repository and returns the latest commit date.
 
-### Missing Functionality
+#### Missing Functionality
 
-### Every other function that the GitHub API offers.
+Every other function that the GitHub API offers.
 
 #### Add a Tutorial
 
