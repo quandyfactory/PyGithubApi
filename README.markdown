@@ -1,4 +1,4 @@
-﻿# PyGithubApi README
+﻿﻿# PyGithubApi README
 
 PyGithubApi is a series of Python functions for interacting with the GitHub API.
 
@@ -17,11 +17,20 @@ Released under the GNU General Public Licence, Version 2:
 
 ## This Version
 
-  * Version: 0.11
+  * Version: 0.12
 
-  * Release Date: 2009-09-25
+  * Release Date: 2009-09-28
 
 ## Revision History
+
+### Version: 0.12
+
+  * Release Date: 2009-09-28
+
+  * Changes:
+
+    * Changed parameters for get_last_commit() from URL to user, repo.
+
 
 ### Version: 0.11
 

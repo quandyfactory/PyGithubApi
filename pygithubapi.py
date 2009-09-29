@@ -1,12 +1,13 @@
-"""
-A series of Python functions for interacting with the GitHub API. 
-Save this module somewhere on the Python PATH and you should be good to go.
-"""
-
 #!/usr/bin/env python
 
-__version__ = 0.11
-__releasedate__ = '2009-09-25'
+"""
+A series of Python functions for interacting with the GitHub API. 
+It requires PyYAML http://pyyaml.org/.
+Otherwise, save this module somewhere on the Python PATH and you should be good to go.
+"""
+
+__version__ = 0.12
+__releasedate__ = '2009-09-28'
 __author__ = 'Ryan McGreal <ryan@quandyfactory.com>'
 __homepage__ = 'http://quandyfactory.com/projects/2/githubapi/'
 __copyright__ = '(C) 2009 by Ryan McGreal. Licenced under GNU GPL 2.0\nhttp://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
@@ -14,12 +15,13 @@ __copyright__ = '(C) 2009 by Ryan McGreal. Licenced under GNU GPL 2.0\nhttp://ww
 import yaml
 import urllib
 
-def get_last_commit(url, proxies = {}):
+def get_last_commit(user='', repo='', proxies = {}):
     """
     Takes a url from the GitHub API for the commits on a repository and returns the latest
     commit date.
     """
-    # page contains the downloaded object
+    # create url from user and repo
+    url = 'http://github.com/api/v2/yaml/commits/list/%s/%s/master' % (user, repo)
     
     try:
         page = urllib.urlopen(url, proxies=proxies)
